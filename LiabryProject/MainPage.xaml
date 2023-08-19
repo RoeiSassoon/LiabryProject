@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="LiabryProject.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LiabryProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="303,108,0,0" TextWrapping="Wrap" Text="Welcome To the Liabery" VerticalAlignment="Top" Height="139" Width="944" FontSize="72" FontWeight="Bold" FontFamily="Bodoni MT Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="287,366,0,0" TextWrapping="Wrap" Text="UserName:" VerticalAlignment="Top" Height="75" Width="267" FontSize="48" FocusVisualPrimaryBrush="Black"/>
+        <TextBox x:Name="UserNameTextBox" HorizontalAlignment="Left" Margin="603,372,0,0" TextWrapping="Wrap" Text="AAAA" VerticalAlignment="Top" Height="64" Width="366" FontSize="48"/>
+        <TextBox x:Name="PasswordTextBox" HorizontalAlignment="Left" Margin="603,441,0,0" TextWrapping="Wrap" Text="1234" VerticalAlignment="Top" Height="64" Width="366" FontSize="48"/>
+        <TextBlock HorizontalAlignment="Left" Margin="285,435,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" Height="75" Width="267" FontSize="48"/>
+        <Button x:Name="SignInButton" Content="Signing In" Margin="603,664,0,0" VerticalAlignment="Top" Height="87" Width="260" FontSize="48" Click="SignInButton_Click"/>
+        <TextBlock x:Name="ErrorBlock" HorizontalAlignment="Left" Margin="403,294,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="566" Height="59" FontSize="20" RequestedTheme="Default"/>
+        <ComboBox x:Name="ImComboBox" Margin="603,552,0,0" Width="299" Height="62" SelectedIndex="0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="328,550,0,0" TextWrapping="Wrap" Text="I am a:" VerticalAlignment="Top" Height="77" Width="182" FontSize="48"/>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="403,285,531,639" FocusVisualSecondaryBrush="#FF030000"/>
+
+
+    </Grid>
+</Page>

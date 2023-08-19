@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="LiabryProject.CustomerMain"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LiabryProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListView x:Name="ListView" Margin="355,194,503,109" Background="#FFCA3232"/>
+        <ComboBox x:Name="SearchByBox" Margin="570,118,0,0" Width="149" Height="48" PlaceholderText="Sorted by:" SelectionChanged="SearchByBox_SelectionChanged" SelectedIndex="0"/>
+        <TextBox x:Name="SearchByTextBox" HorizontalAlignment="Left" Margin="390,126,0,0" TextWrapping="Wrap" Text="BookName" VerticalAlignment="Top" Width="142"/>
+        <ComboBox x:Name="GenreBox" Margin="810,118,0,0" Width="150" Height="40" PlaceholderText="Genras" SelectionChanged="GenreBox_SelectionChanged" SelectedIndex="0"/>
+        <Button x:Name="AddItemButton" Content="Add Item" Margin="1171,0,0,0" Height="131" Width="154" Click="AddItemButton_Click"/>
+        <Button x:Name="DeleteButton" Content="Delete Item" Margin="1171,577,0,0" Height="131" Width="154" VerticalAlignment="Top" Click="DeleteButton_Click"/>
+        <Button x:Name="EditButton" Content="Edit Item" Margin="1171,717,0,0" VerticalAlignment="Top" Height="131" Width="154" Click="EditButton_Click"/>
+        <Button x:Name="AddSaleButton" Content="Add sale" Margin="109,420,0,0" VerticalAlignment="Top" Height="131" Width="154" Click="AddSaleButton_Click"/>
+        <Button x:Name="StopSaleButton" Content="Stop sale" Margin="109,551,0,0" Height="131" Width="154" VerticalAlignment="Top" Click="StopSaleButton_Click"/>
+        <Button x:Name="RentButton" Content="Rent Item" Margin="1171,208,0,0" VerticalAlignment="Top" Height="164" Width="154" Click="RentButton_Click"/>
+        <Button x:Name="RetrunButton" Content="Retrun Item" Margin="109,208,0,0" VerticalAlignment="Top" Height="164" Width="154" Click="RetrunButton_Click"/>
+
+    </Grid>
+</Page>

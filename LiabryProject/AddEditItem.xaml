@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="LiabryProject.AddEditItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LiabryProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Orientation="Horizontal" Margin="80,146,156,46">
+            <StackPanel  Width="628">
+                <TextBlock TextWrapping="Wrap" Text="Book Name:" Height="30"/>
+                <TextBlock TextWrapping="Wrap" Text="Publish company:" Height="35"/>
+                <TextBlock TextWrapping="Wrap" Text="Publish Date:" Height="31"/>
+                <TextBlock TextWrapping="Wrap" Text="Genre:" Height="33"/>
+                <TextBlock TextWrapping="Wrap" Text="Rent price:" Height="31" SelectionChanged="TextBlock_SelectionChanged"/>
+                <TextBlock TextWrapping="Wrap" Text="Item is:" Height="45"/>
+                <TextBlock x:Name="authorBlock" TextWrapping="Wrap" Text="Author:" Height="29"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button x:Name="EditItemButton" Content="Edit item" Click="EditItemButton_Click" Width="77" Height="40"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Width="638">
+                <TextBox x:Name="NameTextBox" TextWrapping="Wrap" Text="Name"/>
+                <TextBox x:Name="CompanyNameTextBox" TextWrapping="Wrap" Text="Company name"/>
+                <DatePicker x:Name="DatePublishPicker" Width="364"/>
+                <ComboBox x:Name="GenreBox" PlaceholderText="Genras" SelectionChanged="GenreBox_SelectionChanged" SelectedIndex="0"/>
+                <TextBox x:Name="PriceTextBox" TextWrapping="Wrap" Text="Enter number"/>
+                <StackPanel Orientation="Horizontal" Height="42">
+                    <RadioButton x:Name="JounralButton" Content="Jounral" Checked="JounralButton_Checked"/>
+                    <RadioButton x:Name="BookButton" Content="Book" Checked="BookButton_Checked"/>
+                </StackPanel>
+                <TextBox x:Name="AuthorTextBox" TextWrapping="Wrap" Text="Author"/>
+                <Button x:Name="AddItemButton" Content="Add item" Click="AddItemButton_Click" Width="77" Height="40"/>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Page>
